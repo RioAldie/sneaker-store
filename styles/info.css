@@ -137,6 +137,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    cursor: pointer;
+}
+.info .newproduct .product:hover{
+    background: #F6F7F8;
 }
 .info .newproduct .product .img-product{
     width: 152px;

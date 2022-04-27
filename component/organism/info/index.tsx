@@ -1,5 +1,7 @@
-import Image from "next/image"
-import BoxService from "./boxService"
+import BoxService from "./boxService";
+import Sponsor from "./sponsor";
+import Newproduct from "./newproduct";
+import Search from "../../atoms/search";
 
 export default function Info(){
     return(
@@ -15,78 +17,21 @@ export default function Info(){
     </div>
     <h1>Latest news</h1>
     <div className="sponsor">
-        <div className="box-sponsor">
-            <div className="img-sponsor">
-                <img src="/image/Nike_logo_emblem_logotype 1.png" alt=""/>
-            </div>
-            <div className="text">
-                <h3>Fashion Industry</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
-    
-        <div className="box-sponsor">
-            <div className="img-sponsor">
-                <img src="/image/bank-jatim-logo.png" alt=""/>
-            </div>
-            <div className="text">
-                <h3> New Bank </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            
-        </div>
-    
-        <div className="box-sponsor">
-            <div className="img-sponsor">
-                <img src="/image/kronos-logo-1-1 1.png" alt=""/>
-            </div>
-            <div className="text">
-                <h3>HR Community</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            
-        </div>
+        <Sponsor image={"/image/Nike_logo_emblem_logotype.png"} w={146} h={53} sponsor={"Fashion Industry"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit."} />
+        
+        <Sponsor image={"/image/bank-jatim-logo.png"} w={224} h={52} sponsor={" New Bank"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit."} />
+        
+        <Sponsor image={"/image/kronos-logo.png"} w={154} h={83} sponsor={"HR Community"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. "} />
+  
     </div>
     <h1>featured product</h1>
     <div className="newproduct">
-        <div className="product">
-             <div className="img-product">
-            <img src="/image/nike-img-removebg-preview.png" alt=""/>
-            </div>
-            <div className="product-detail">
-                <h3>Blue Swade Nike Sneakers</h3>
-                <img src="/image/rate.svg" alt=""/>
-               <span><h4>$349</h4> <s>$399</s></span> 
-            </div>
-        </div>
-        <div className="product">
-            <div className="img-product">
-           <img src="/image/vans-img.png" alt=""/>
-           </div>
-           <div className="product-detail">
-               <h3>Old Scholl Red Vans Sneakers</h3>
-               <img src="/image/rate.svg" alt=""/>
-             <span><h4>$249</h4> <s>$299</s></span>  
-           </div>
-       </div>
-       <div className="product">
-        <div className="img-product">
-       <img src="/image/adidas-img.png" alt=""/>
-       </div>
-       <div className="product-detail">
-           <h3>White Snow Adidas Sneakers</h3>
-           <img src="/image/rate.svg" alt=""/>
-          <span><h4>$449</h4> <s>$599</s></span> 
-       </div>
-   </div>
+        <Newproduct image={'/image/nike-img-removebg-preview.png'} w={154} h={154} name={'Blue Swade Nike Sneakers'} price={'$349'} anchor={'$399'} />
+        <Newproduct image={'/image/vans-img.png'} w={154} h={154} name={'Old Scholl Red Vans Sneakers'} price={'$249'} anchor={'$299'} />
+        <Newproduct image={'/image/adidas-img.png'} w={154} h={154} name={'White Snow Adidas Sneakers'} price={'$449'} anchor={'$599'} />
     </div>
 
-    <div className="form-search">
-        <form action="" className="form">
-            <input type="text" className="input-search" placeholder="Cari apa yang kamu inginkan.."/>
-            <button className="btn-search">Search</button>
-        </form>
-    </div>
+    <Search />
 </section>
         </>
     )
