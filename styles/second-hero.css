@@ -63,5 +63,8 @@
 }
 .second-hero .box-hero img{
     position: absolute;
+    display: flex;
+    width: 795px;
+    height: 600px;
     margin-top: -92px;
 }

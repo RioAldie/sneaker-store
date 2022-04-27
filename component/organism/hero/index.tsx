@@ -1,43 +1,19 @@
+import Image from "next/image";
+import CardOffer from "./cardOffer";
+
 export default function Hero(){
     return(
         <>
         <section className="Hero">
-    <div className="hero-offer">
-        <img src="/image/Offer Banner.png" alt=""/>
-    </div>
-    <div className="container-offer">
-        <div className="card-offer">
-            <p className="name-product">
-                FS-quilted maxi cross bag
-            </p>
-            <img src="/image/image-Product-1.png" alt=""/>
-            <p className="disc">24% Off</p>
-            <div className="price">
-                $299,43
+            <div className="hero-offer">
+                <Image src="/image/Offer-Banner.png" width={1500} height={654}/>
             </div>
-        </div>
-        <div className="card-offer">
-            <p className="name-product">
-                FS-Nike Air Max 470 Premium 
-            </p>
-            <img src="/image/image-Product-2.png" alt=""/>
-            <p className="disc">24% Off</p>
-            <div className="price">
-                $399,43
+            <div className="container-offer">
+                <CardOffer name={"FS-quilted maxi cross bag"} image={"/image/image-Product-1.png"} disc={"24% Off"} Price={"$299,43"} />
+                <CardOffer name={" FS-Nike Air Max 470 Premium "} image={"/image/image-Product-2.png"} disc={"24% Off"} Price={"$399,43"} />
+                <CardOffer name={"FS-Nike Air Max 270 Red"} image={"/image/image-Product-3.png"} disc={"24% Off"} Price={"$199,43"} />
             </div>
-        </div>
-        <div className="card-offer">
-            <p className="name-product">
-                FS-Nike Air Max 270 Red
-            </p>
-            <img src="/image/image-Product-3.png" alt=""/>
-            <p className="disc">24% Off</p>
-            <div className="price">
-                $199,43
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
         </>
     )
 }
