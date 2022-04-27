@@ -1,0 +1,75 @@
+.hero-offer{
+    width: 100%;
+    height: 653px;
+    overflow: hidden;
+    background: cover;
+    margin-top: 50px;
+}
+.Hero .container-offer{
+    width: 1252px;
+    height: 388px;
+    position: absolute;
+    top: 670px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.Hero .container-offer .card-offer{
+    width: 434px;
+    height: 354px;
+    border-radius: 2px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 1;
+    margin-left: 5px;
+}
+.Hero .container-offer .card-offer:hover{
+    cursor: pointer;
+    background: #F2F2F2;
+}
+.Hero .container-offer .card-offer img{
+    width: 200px;
+    height: 100px;
+}
+.card-offer .name-product{
+    width: 202px;
+    height: 58px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    align-self: flex-start;
+    color: #223263;
+}
+.card-offer .disc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FB7181;
+}
+.card-offer .price{
+    width: 404px;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    color: #40BFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.5px;
+    justify-content: flex-end;
+    
+}
