@@ -5,8 +5,8 @@ export default function Footer(){
             <section className="footer-container">
                 <div className="company">
                     <div className="logo">
-                        <img src="/image/Icon.svg" alt=""/>
-                        <h2>Andoran Ltd</h2>
+                        <img src="/icon/Icon.svg" alt=""/>
+                        <h2>Andoran Ltd.</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis quidem excepturi eos asperiores explicabo fugiat autem laboriosam</p>
                 </div>
@@ -14,8 +14,8 @@ export default function Footer(){
                     <h2>Follow Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sed deserunt tenetur nihil ullam perspiciatis </p>
                     <div className="social-media">
-                        <img src="/image/facebook.svg" alt="/"/>
-                        <img src="/image/twitter.svg" alt=""/>
+                        <img src="/icon/facebook.svg" alt="/"/>
+                        <img src="/icon/twitter.svg" alt=""/>
                     </div>
                 </div>
                 <div className="box">
